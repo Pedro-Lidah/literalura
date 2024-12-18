@@ -56,9 +56,6 @@ public class BookServices {
                         authorRepository.save(author);
                     }
                 }
-               // bookList.getResults().forEach(book -> salvarAutores(book.getAuthors()));
-
-               // bookRepository.saveAll(bookList.getResults());
             }
         } catch (Exception e) {
             System.err.println("Erro ao buscar livro: " + e.getMessage());
@@ -80,7 +77,4 @@ public class BookServices {
                 .filter(book -> book.getLanguage().equalsIgnoreCase(idioma))
                 .collect(Collectors.toList());
     }
-   // public void cadastrarAutor(Author autor){
-     //   authorRepository.save(autor);
-   // }
 }
